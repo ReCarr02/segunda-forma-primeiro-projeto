@@ -2,32 +2,39 @@ console.log ("Digite o nome do herói")
 let nickname = "Skuld"
 console.log ("Olá, " + nickname + "!")
 let xp = 10001
+let levelFerro = "Ferro"
+let levelBronze = "Bronze"
+let levelPrata = "Prata"
+let levelOuro = "Ouro"
+let levelPlatina = "Platina"
+let levelAscendente = "Ascendente"
+let levelImortal = "Imortal"
+let levelRadiante = "Radiante"
 
-switch (xp >=0){
+switch (xp>0){
     case xp <=1000:
-        console.log ("O herói " + nickname + "está no nível Ferro.");
+        xp = levelFerro;
      break;
     case xp >1000 && xp <=2000:
-        console.log ("O herói " + nickname + "está no nível Bronze.");
+        xp = levelBronze;
     break;
     case xp >2000 && xp <=5000:
-        console.log ("O herói " + nickname + "está no nível Prata.");
+        xp = levelPrata;
     break;
     case xp >5000 && xp <=7000:
-        console.log ("O herói " + nickname + "está no nível Ouro.");
+        xp = levelOuro;
     break;
     case xp >7000 && xp <=8000:
-        console.log ("O herói " + nickname + "está no nível Platina.");
+        xp = levelPlatina;
     break;
     case xp >8000 && xp <=9000:
-        console.log ("O herói " + nickname + "está no nível Ascendente.");
+        xp = levelAscendente;
     break;
     case xp >9000 && xp <=10000:
-        console.log ("O herói " + nickname + "está no nível Imortal.");
+        xp = levelImortal;
     break;
     case xp >10000:
-        console.log ("O herói " + nickname + "está no nível Radiante.");
+        xp = levelRadiante;
     break;
-    
-        
 }
+console.log ("O herói " + nickname + " está no nível " + xp)
